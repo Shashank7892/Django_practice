@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>EVEN ODD</title>
+    </head>
+    <body>
+        <h1 align="center"> EVEN|ODD</h1>
+        <form align="center" method="post">
+            {% csrf_token %}
+            {{form}}
+            <div>
+                <button type="submit">EVEN/ODD</button>
+            </div>
+            <div>
+                <label>EVEN/ODD</label>
+                <input type="text" value="{{out}}">
+            </div>
+        </form>
+    </body>
+</html>

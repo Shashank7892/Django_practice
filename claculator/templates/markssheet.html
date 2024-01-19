@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Simple calculator</title>
+    </head>
+    <body>
+        <h1 align="center">calculator</h1>
+        <form align="center" method="post">
+            {% csrf_token %}
+            <div>
+                <label>Subjet 1</label>
+                <input type="text" name="sub1"/>
+            </div>
+            <div>
+                <label>Subjet 2</label>
+                <input type="text" name="sub2"/>
+            </div>
+            <div>
+                <label>Subjet 3</label>
+                <input type="text" name="sub3"/>
+            </div>
+            <div>
+                <label>Subjet 4</label>
+                <input type="text" name="sub4"/>
+            </div>
+            <div>
+                <label>Subjet 5</label>
+                <input type="text" name="sub5"/>
+            </div>
+            <div>
+                <button type="submit">Calculate</button>
+            </div>
+            <div>
+            <label>Total</label>
+                <input type="text" value="{{total}}"/>
+            </div>
+            <div>
+            <label>Percentage</label>
+            
+                <input type="text" value="{{percentage}}"/>
+            </div>
+            <div>
+            <label>Division</label>
+                <input type="text" value="{{grade}}"/>
+            </div>
+        </form>
+    </body>
+</html>
+

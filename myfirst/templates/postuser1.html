@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>User Form</title>
+    </head>
+    <body>
+        <div>
+            <form method="post">
+                {% csrf_token %}
+                {{form}}
+                {% comment %} <div>
+                    <label>num1</label>
+                    <input type="text" name="num1" value="{{n1}}"/>
+                </div>
+                <div>
+                    <label>num2</label>
+                    <input type="text" name="num2" value="{{n2}}"/>
+                </div> {% endcomment %}
+                <div>
+                    <button type="submit">Save</button>
+                </div>
+                <div>
+                    <label>Output</label>
+                    <input type="text" value="{{output1}}">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>  
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <div>
+    {{bdata}}
+    </div>
+        {% for n in setdata %}
+        <div>
+            {{forloop.counter}}{{n}}
+        </div>
+        {% endfor %}
+    
+    <table border="1" cellspadding="10">
+        <tr>
+        <th>Name</th>
+        <th>PHone</th>
+        <th>Course</th>
+        </tr>
+        {% for d in studentd %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.phonenumber}}</td>
+            <td>{{d.course}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
